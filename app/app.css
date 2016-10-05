@@ -1,0 +1,34 @@
+﻿button {
+    font-size: 36;
+}
+action-bar {
+  background-color: #424242;
+  color: snow;
+  font-family: 'proximanova-reg' !important;
+  font-weight: 600;
+}
+.menu-icon {
+  margin-left: 20;
+}
+.body {
+  background-image: url("res://bg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+}
+.ic-menu{
+  width: 50px;
+  height: 50px;
+}
+
+.fa {
+  font-family: 'FontAwesome';
+  font-size: 18;
+  color: black;
+}
+
+.hr {
+  border-width: 1;
+  border-color: #d6d6d6;
+}

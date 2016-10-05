@@ -1,0 +1,34 @@
+# Editor specific
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+.settings
+.vscode
+
+# Installed libs
+
+node_modules
+/bower_components/
+!typings/custom.d.ts
+typings/globals/
+typings/modules/
+typings/index.d.ts
+!typings/custom/
+
+# Generated
+
+target
+build
+src/**/*.js
+src/conf/dev/*
+src/coverage
+karma_html
+.repository
+
+
+# Misc
+*.log
+*.log.*
+.DS_Store
+npm-debug.log

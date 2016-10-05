@@ -1,0 +1,68 @@
+.login-container {
+  /*background-color: #026CAD;*/
+  background-image: url("res://bg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 65%;
+}
+
+.logo {
+    font-size: 20;
+    font-weight: bold;
+    font-family: 'proximanova-reg';
+    color: snow;
+}
+
+.credentials {
+    font-size: 16;
+    font-weight: 400;
+    font-family: 'proximanova-reg';
+    color: snow;
+    width: 200;
+}
+
+.agreement {
+    font-size: 12;
+    font-weight: 400;
+    font-family: 'proximanova-reg';
+    color: snow;
+    height: auto;
+}
+
+.login {
+    padding: 5;
+}
+
+.signup {
+    padding: 5;
+}
+
+.login-btn {
+    font-size: 14;
+    font-weight: bold;
+    font-family: 'proximanova-reg';
+    color: #404040;
+    background-color: #FCDC3B;
+    border-radius: 0 !important;
+    width: 200;
+}
+
+.signup-btn {
+    font-size: 14;
+    font-weight: bold;
+    font-family: 'proximanova-reg';
+    color: #404040;
+    background-color: snow;
+    border-radius: 0 !important;
+    width: 200;
+}
+
+.auth-loading {
+    color: #FFFF00;
+}
+
+label {
+    font-family: 'proximanova-reg';
+    color: snow;
+}

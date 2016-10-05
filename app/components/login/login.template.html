@@ -1,0 +1,40 @@
+<StackLayout [height]="heightDIPs" [width]="widthDIPs">
+    <StackLayout class="login-container" horizontalAlignment="center">
+        <GridLayout columns="225, *" 
+                    rows="125, 75, 75, 75, 150, *" 
+                    width="auto" +
+                    height="auto">
+            
+            <StackLayout row="0" col="0" class="logo" horizontalAlignment="center">
+                <img src="res://logo"/>
+            </StackLayout>
+            
+            <StackLayout row="2" col="0" class="credentials" horizontalAlignment="center">
+                <TextField [(ngModel)]="_userFactory.email"
+                            hint="email address"></TextField>
+                <TextField [(ngModel)]="_userFactory.password"
+                            secure="true"
+                            hint="password"></TextField>
+            </StackLayout>
+            
+            <StackLayout row="3" col="0" horizontalAlignment="center" class="agreement">
+                <label text="By creating an account with us you agree"></label> 
+                <label text="to our Terms & Conditions" horizontalAlignment="center"></label>
+                <label text="and Privacy Policy" horizontalAlignment="center"></label>
+                <ActivityIndicator
+                    [busy]="isAuthenticating"
+                     class="auth-loading"></ActivityIndicator>
+            </StackLayout>
+            
+            <StackLayout row="4" col="0" horizontalAlignment="center">
+                <WrapLayout>
+                    <StackLayout class="signup">
+                        <button text="log in" class="login-btn" (tap)="login()"></button>
+                        <button text="sign up" class="signup-btn" (tap)="signup()"></button>
+                    </StackLayout>
+                </WrapLayout>
+            </StackLayout>
+            
+        </GridLayout>
+    </StackLayout>
+</StackLayout>
