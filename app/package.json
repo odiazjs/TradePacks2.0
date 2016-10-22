@@ -43,7 +43,6 @@
     "@angular/router-deprecated": "2.0.0-rc.2",
     "font-awesome": "4.6.3",
     "nativescript-angular": "0.2.0",
-    "nativescript-liveedit": "2.1.0",
     "nativescript-telerik-ui": "1.2.0",
     "tns-core-modules": "2.1.0"
   },

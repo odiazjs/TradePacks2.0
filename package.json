@@ -44,7 +44,6 @@
     "fibers": "^1.0.14",
     "font-awesome": "4.6.3",
     "nativescript-angular": "0.2.0",
-    "nativescript-liveedit": "2.1.0",
     "nativescript-telerik-ui": "1.2.0",
     "tns-core-modules": "2.1.0",
     "reflect-metadata": "0.1.2",

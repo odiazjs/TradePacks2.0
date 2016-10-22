@@ -8,7 +8,6 @@ import {APP_ROUTER_PROVIDERS} from "./app.routes"
 import {AppComponent} from './app.component'
 
 enableProdMode()
-const liveedit = require('nativescript-liveedit')
 
 nativeScriptBootstrap(AppComponent, [
     HTTP_PROVIDERS,
