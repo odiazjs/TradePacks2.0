@@ -1,6 +1,10 @@
 {
   "name": "tradepacks",
   "main": "main.js",
+  "scripts": {
+    "start": "tns run android --geny 'S6'",
+    "watch": "tns livesync android --geny 'S6' --watch"
+  },
   "version": "1.0.0",
   "authors": [
     "Oscar Diaz <odiaz.dw@gmail.com>"

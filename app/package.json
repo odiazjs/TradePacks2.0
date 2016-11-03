@@ -23,7 +23,7 @@
   "readme": "Tradepacks Application",
   "repository": {
         "type": "git",
-        "url": "git://github.com/NativeScript/template-hello-world-ng"
+        "url": "https://github.com/thinkblue36/TradePacks2.0"
     },
   "nativescript": {
     "id": "org.nativescript.futPacks",
