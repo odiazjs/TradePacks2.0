@@ -1,6 +1,6 @@
 .login-container {
-  /*background-color: #026CAD;*/
-  background-image: url("res://bg");
+  /*background-color: #565858;*/
+  background-image: url("res://tpbg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -43,7 +43,7 @@
     font-weight: bold;
     font-family: 'proximanova-reg';
     color: #404040;
-    background-color: #FCDC3B;
+    background-color: #fedb17;
     border-radius: 0 !important;
     width: 200;
 }
@@ -65,4 +65,8 @@
 label {
     font-family: 'proximanova-reg';
     color: snow;
+}
+
+.social {
+    margin: 5;
 }

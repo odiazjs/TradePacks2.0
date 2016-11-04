@@ -2,8 +2,11 @@
   "name": "tradepacks",
   "main": "main.js",
   "scripts": {
-    "start": "tns run android --geny 'S6'",
-    "watch": "tns livesync android --geny 'S6' --watch"
+    "start:nexus": "tns run android --geny 'Nexus5'",
+    "start:s6": "tns run android --geny 'S6'",
+    "watch:nexus": "tns livesync android --geny 'Nexus5' --watch",
+    "watch:s6": "tns livesync android --geny 'S6' --watch",
+    "build": "tns build android"
   },
   "version": "1.0.0",
   "authors": [

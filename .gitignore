@@ -5,6 +5,7 @@ node_modules
 platforms
 *.js
 *.js.map
-app/App_Resources
+app/App_Resources/AndroidManifest.xml
+app/App_Resources/app.gradle
 .jshintrc
 app/.DS_Store

@@ -11,7 +11,7 @@ action-bar {
   margin-left: 20;
 }
 .body {
-  background-image: url("res://bg");
+  background-image: url("res://tpbg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
