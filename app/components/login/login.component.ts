@@ -38,10 +38,10 @@ constructor (private _router        : Router,
     ngOnInit () {
         this.heightDIPs = screen.mainScreen.heightDIPs
         this.widthDIPs = screen.mainScreen.widthDIPs
-        let usernameView = <TextField>this.usernameView.nativeElement
-        let passwordView = <TextField>this.passwordView.nativeElement
-        setHintColor( { view: usernameView, color: new Color('#8f9090') } )
-        setHintColor( { view: passwordView, color: new Color('#8f9090') } )
+        const usernameView = <TextField> this.usernameView.nativeElement
+        const passwordView = <TextField> this.passwordView.nativeElement
+        setHintColor( { view: usernameView, color: new Color('#abaeb3') } )
+        setHintColor( { view: passwordView, color: new Color('#abaeb3') } )
     }
     
     login () : void {
