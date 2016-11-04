@@ -1,10 +1,13 @@
-import {Inject, Injectable, Component, OnInit, ViewChild} from '@angular/core'
+import { Inject, Injectable, Component, OnInit, ViewChild, ElementRef } from '@angular/core'
 import {Router, } from "@angular/router"
-import {Page} from 'ui/page'
-import {screen} from "platform"
+import { Page } from 'ui/page'
+import { Color } from 'color'
+import { TextField } from 'ui/text-field'
+import { screen } from "platform"
 import {SignupDTO} from '../../types'
 import {LoginService} from './login.service'
 import {UserFactory} from '../../factories/user.factory'
+import { setHintColor } from '../../util/nativeElements'
 
 @Component({
     moduleId: module.id,
@@ -20,6 +23,8 @@ export class LoginComponent implements OnInit {
     public isAuthenticating : boolean
     public heightDIPs       : number
     public widthDIPs        : number
+    @ViewChild("usernameTxt") public usernameView : ElementRef
+    @ViewChild("passwordTxt") public passwordView : ElementRef
     
 constructor (private _router        : Router, 
              private _page          : Page, 
@@ -27,11 +32,16 @@ constructor (private _router        : Router,
              public _userFactory  : UserFactory) {
                      
         this._page.actionBarHidden = true
+        
     }
     
     ngOnInit () {
         this.heightDIPs = screen.mainScreen.heightDIPs
         this.widthDIPs = screen.mainScreen.widthDIPs
+        let usernameView = <TextField>this.usernameView.nativeElement
+        let passwordView = <TextField>this.passwordView.nativeElement
+        setHintColor( { view: usernameView, color: new Color('#8f9090') } )
+        setHintColor( { view: passwordView, color: new Color('#8f9090') } )
     }
     
     login () : void {
@@ -51,5 +61,20 @@ constructor (private _router        : Router,
             })
             .then(() => { this._router.navigate(['/signup']) })
         
+    }
+
+    socialAuth ( id: string ) : void {
+        let social = this._page.getViewById(id)
+            social.animate({
+                scale: { x: 1.2, y: 1.2 },
+                duration: 100,
+                iterations: 2
+            })
+                .then(() => {
+                    social.animate({
+                        scale: { x: 1.0, y: 1.0 },
+                        duration: 50
+                    })
+                })
     }
 }
