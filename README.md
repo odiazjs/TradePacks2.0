@@ -4,7 +4,7 @@ FIFA card trading game.
 ## Setup environment
 *Follow Nativescript setup guide.
  
-- nvm use node 4.5.0 
+- nvm use node 4.5.0 (for Windows)
 - tns platform add android
 - npm install nativescript -g
 - npm install typescript -g
@@ -14,4 +14,5 @@ FIFA card trading game.
 ##To run project
 
 * Install an Android emulator. (Genymotion)
-* grunt dev
+* npm run start:{{deviceId}}
+* npm run watch:{{deviceId}} (livesync)
